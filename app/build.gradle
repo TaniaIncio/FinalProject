@@ -19,19 +19,19 @@ android {
         }
         debug{
             debuggable true
-            applicationSuffix ".debug"
+
         }
     }
 
     /**Diferentes flavors**/
     productFlavors{
         free {
-            packageName = "com.udacity.gradle.builditbigger"
+            applicationId = "com.udacity.gradle.builditbigger.free"
             versionCode 1
             versionName = "1.0.0"
         }
-        pro {
-            packageName = "com.udacity.gradle.builditbigger.pro"
+        paid {
+            applicationId = "com.udacity.gradle.builditbigger.paid"
             versionCode 1
             versionName = "1.0.0"
         }
