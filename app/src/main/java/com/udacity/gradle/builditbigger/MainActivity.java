@@ -17,6 +17,7 @@ import com.tincio.example.jokeandroidlib.ShowJokeActivity;
 import com.udacity.gradle.builditbigger.service.EndpointsAsyncTask;
 
 
+
 public class MainActivity extends AppCompatActivity {
 
     ProgressBar progressBar;
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         //add anuncion intersticiales
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/6300978111");
+        mInterstitialAd.setAdUnitId(getString(R.string.banner_ad_unit_id));
 
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
