@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/orange_udacity</color>
+    <color name="colorPrimaryDark">#e87e0f</color>
+    <color name="colorAccent">#e87e0f</color>
+
+    <color name="orange_udacity">#f89024</color>
+    <color name="orange_udacity_5">#0Df89024</color>
+    <color name="grey_500">#9E9E9E</color>
+</resources>

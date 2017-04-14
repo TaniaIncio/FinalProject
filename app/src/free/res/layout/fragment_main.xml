@@ -7,12 +7,17 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    android:background="@mipmap/background"
     tools:context=".MainActivityFragment">
 
     <TextView
         android:id="@+id/instructions_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="@dimen/sp_text"
+        android:textStyle="bold"
         android:text="@string/instructions" />
 
     <Button
@@ -21,6 +26,9 @@
         android:layout_below="@+id/instructions_text_view"
         android:onClick="tellJoke"
         android:text="@string/button_text"
+        style="@style/MyButton"
+        android:id="@+id/btn_show_joke"
+        android:layout_centerInParent="true"
         />
     <ProgressBar
         android:id="@+id/progressBar"
@@ -31,13 +39,4 @@
         android:visibility="gone"
         android:layout_centerInParent="true"/>
 
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        ads:adSize="BANNER"
-        ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
-
-</RelativeLayout>
+  </RelativeLayout>
