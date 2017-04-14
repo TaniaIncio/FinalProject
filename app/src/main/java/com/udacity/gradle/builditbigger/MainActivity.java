@@ -31,11 +31,11 @@ public class MainActivity extends AppCompatActivity {
         //add anuncion intersticiales
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId(getString(R.string.banner_ad_unit_id));
-
+        requestNewInterstitial();
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
             public void onAdClosed() {
-                requestNewInterstitial();
+
                 showJoke();
             }
         });
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
     /**Anuncios intersticiales**/
     private void requestNewInterstitial() {
         AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("B1B30FBDDBEF32919AF6C5099897C2FA")//AdRequest.DEVICE_ID_EMULATOR)
                 .build();
 
         mInterstitialAd.loadAd(adRequest);
